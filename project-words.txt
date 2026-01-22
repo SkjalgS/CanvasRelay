@@ -1,0 +1,14 @@
+canvasapi
+dotenv
+helpcommand
+PYTHONUNBUFFERED
+
+discordcanvas
+
+Konto
+Innstillinger
+Godkjente
+Integrasjoner
+
+Edvard
+Pedersen

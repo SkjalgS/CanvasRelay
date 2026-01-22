@@ -1,0 +1,29 @@
+# Docker Compose file format version
+version: "3.8"
+
+services:
+  # Define our bot service
+  bot:
+    # Build configuration
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    # Name of the container
+    container_name: discordcanvas-bot
+
+    # Load environment variables from .env file
+    env_file:
+      - src/.env
+
+    # Automatically restart the container unless it is explicitly stopped
+    restart: unless-stopped
+
+    # Resource limits and reservations
+    deploy:
+      resources:
+        limits:
+          memory: 256M # Maximum 256MB RAM
+        reservations:
+          memory: 128M # Reserve at least 128MB RAM
+

@@ -1,0 +1,49 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python virtual environment
+venv/
+.venv/
+env/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Git repository
+.git/
+.gitignore
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Documentation and metadata
+
+README.md
+*.md
+cspell.json
+project-words.txt
+
+# Logs and runtime data
+*.log
+app.log
+
+# Python distribution / packaging
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Docker files themselves
+Dockerfile
+docker-compose*.yml
+.dockerignore
